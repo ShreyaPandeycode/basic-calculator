@@ -1,0 +1,178 @@
+body{
+    margin:20px;
+    animation: font 2s ease-in 0s infinite normal ;
+}
+.text{
+    font-size:4rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+    color:springgreen;
+}
+.text h1{
+    margin:0;
+    border: 1px dotted #ccc;
+    animation: font 2s ease-in 0s infinite normal ;
+}
+@keyframes font{
+    0%{
+        background: linear-gradient(75deg , rgb(21, 169, 232),violet , pink, orange);
+    }
+    100%{
+        background: linear-gradient(75deg , rgb(21, 232, 84),rgb(215, 238, 130) , rgb(225, 118, 11), rgb(218, 31, 31));
+    }
+}
+#cal{
+    height:500px;
+    width:300px;
+    border: 10px double rgb(115, 113, 113); 
+    border-radius:30px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    bottom:10%;
+    margin: -25px 0 0 -25px;
+    background-color:black;
+}
+ #result{
+     margin: 20px 10px 20px 10px;
+     block-size:50px;
+     background-color:rgba(77, 161, 98, 0.856);
+     border: 2px double black;
+     border-radius:20px;
+     min-width:260px;
+     color:black;
+     padding-top:30px;
+     text-align: right;
+     font-size: 3rem;
+     max-width: 15vw;
+     
+}
+#result:hover{
+    background-color:white;
+}
+::placeholder {
+    color: peachpuff;
+    font-size: 4rem;
+    text-align:right;
+  }
+  .first{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+  }
+tr.first td input[type="button"]{
+    height:30px;
+    width:48px;
+    margin-left:10px;
+    text-align:center;
+    filter:drop-shadow(2px 2px 2px rgb(190, 187, 187));
+    border-radius:30px;
+    font-size:1.5rem;
+    color:rgb(250, 139, 4);
+    background-color:black;
+    block-size:3.5rem;
+    margin-bottom:10px;
+    border-color: #0000000f;
+}
+.second{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+   
+  }
+tr.second td input[type="button"]{
+    height:30px;
+    width:48px;
+    margin-left:10px;
+    text-align:center;
+    filter:drop-shadow(2px 2px 2px rgb(191, 187, 187));
+    border-radius:50px;
+    font-size:1.5rem;
+    color:white;
+    background-color:black;   
+    block-size:3.5rem;
+    margin-bottom:10px;
+    border-color: #0000000f;
+}
+.third{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+  }
+tr.third td input[type="button"]{
+    height:30px;
+    width:48px;
+    margin-left:10px;
+    text-align:center;
+    filter:drop-shadow(2px 2px 2px rgb(191, 187, 187));
+    border-radius:50px;
+    font-size:1.5rem;
+    color:white;
+    background-color:black;   
+    block-size:3.5rem;
+    margin-bottom:10px;
+    border-color: #0000000f;
+}
+.fourth{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+  }
+tr.fourth td input[type="button"]{
+    height:30px;
+    width:48px;
+    margin-left:10px;
+    text-align:center;
+    filter:drop-shadow(2px 2px 2px rgb(191, 187, 187));
+    border-radius:50px;
+    font-size:1.5rem;
+    color:white;
+    background-color:black;   
+    block-size:3.5rem;
+    margin-bottom:10px;
+    border-color: #0000000f;
+}
+.fifth{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+  }
+tr.fifth td input[type="button"]{
+    height:30px;
+    width:48px;
+    margin-left:10px;
+    filter:drop-shadow(2px 2px 2px rgb(191, 187, 187));
+    border-radius:50px;
+    text-align:center;
+    font-size:1.5rem;
+    color:rgb(237, 135, 9);
+    background-color:black;
+    border-color:rgb(56, 41, 41);
+    block-size:3.5rem;
+    margin-bottom:10px;
+    border-color: #0000000f;
+}
+#clear{
+    background-color:red;
+    color:white;
+}
+#del{
+    background-color:rgb(23, 105, 228);
+    color:white;
+    
+}
+#equal{
+    background-color:green;
+    color:black;
+   
+}
+#op{
+    color:orange;
+   
+}
+input[type="button"]:hover{
+    box-shadow: -2px 2px 4px #f1ebeb ;
+}

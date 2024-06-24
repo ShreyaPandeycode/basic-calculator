@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Create table -->
+         <div class="text">
+            <h1> Calculator</h1>
+         </div>
+         <div class="cal" id="cal">
+        <table id="calculator"> 
+            <tr> 
+                <td colspan="4"> 
+                    <input type="text" placeholder="0" id="result"> 
+                </td> 
+               </tr>
+               <tr class="first">
+                <td><input type="button" id="clear" value="AC" onclick="result.value=''; playClickSound();"></td> 
+                <td><input type="button" id="del" value="del" onclick="result.value =result.value.toString().slice(0,-1); playClickSound();"></td>
+                <td><input type="button"  value="." onclick="result.value+='.';playClickSound();"></td>
+                    `
+                <td><input type="button"  value="%" onclick="result.value+='%';playClickSound();"></td>
+             </tr>
+            <tr class="second"> 
+             
+                <td><input type="button"  value="1" onclick="result.value+='1';playClickSound();"></td> 
+                <td><input type="button" value="2" onclick="result.value+='2';playClickSound();"></td> 
+                <td><input type="button" value="3" onclick="result.value+='3';playClickSound();"></td> 
+                <td><input type="button" id="op" value="/" onclick="result.value+='/';playClickSound();"></td> 
+ 
+            </tr> 
+            <tr class="third"> 
+   
+                <td><input type="button" value="4" onclick="result.value+='4';playClickSound();"></td> 
+                <td><input type="button" value="5" onclick="result.value+='5';playClickSound();"></td> 
+                <td><input type="button" value="6" onclick="result.value+='6';playClickSound();"></td> 
+                <td><input type="button" id="op" value="x" onclick="result.value+='x';playClickSound();"></td> 
+
+            </tr> 
+            <tr class="fourth"> 
+
+                <td><input type="button" value="7" onclick="result.value+='7';playClickSound();"></td> 
+                <td><input type="button" value="8" onclick="result.value+='8';playClickSound();"></td> 
+                <td><input type="button" value="9" onclick="result.value+='9';playClickSound();"></td> 
+                <td><input type="button" id="op" value="-" onclick="result.value+='-';playClickSound();"></td> 
+
+            </tr> 
+            <tr class="fifth"> 
+  
+                <td><input type="button" value="00" onclick="result.value+='00';playClickSound();"></td> 
+                <td><input type="button" value="0" onclick="result.value+='0';playClickSound();"></td> 
+                <td><input type="button" id="equal" value="=" onclick="result.value=eval(result.value);playClickSound();"></td> 
+                <td><input type="button" id="op" value="+" onclick="result.value+='+';playClickSound();"></td> 
+         
+            </tr> 
+        </table> 
+    </div>   
+    <audio id="buttonClickSound">
+        <source src="C:\Users\HP\Downloads\old-radio-button-click-97549.mp3" type="audio/mpeg">
+        <!-- Provide alternative sources for different browsers if needed -->
+    </audio>
+
+    <script>
+        // JavaScript functions to handle calculator operations
+        function playClickSound() {
+            const audio = document.getElementById('buttonClickSound');
+            audio.currentTime = 0; // Reset audio to the beginning to allow rapid clicks
+            audio.play();
+        }
+    </script>
+</body>
+</html> 
+
